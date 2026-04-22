@@ -8,7 +8,7 @@
 
 ---
 
-## 1️ Python Dynamic Typing
+## 1️) Python Dynamic Typing
 
 ```python
 x = 4
@@ -44,7 +44,7 @@ NumPy แก้ปัญหานี้โดย:
 
 ---
 
-## 2️ Python Object คืออะไร
+## 2️) Python Object คืออะไร
 
 Python variable = Object
 
@@ -71,7 +71,7 @@ x = 4
 
 ---
 
-## 3️ Python List
+## 3️) Python List
 
 ```python
 L = [1, 2, 3]
@@ -86,7 +86,7 @@ L3 = [1, "a", 3.14]
 
 ---
 
-## 4️ ปัญหาของ List
+## 4️) ปัญหาของ List
 
 List เก็บแบบ: pointer → object → data
 
@@ -97,7 +97,7 @@ List เก็บแบบ: pointer → object → data
 
 ---
 
-## 5️ Fixed-Type Array (แนวคิดสำคัญ)
+## 5️) Fixed-Type Array (แนวคิดสำคัญ)
 
 ถ้าข้อมูลเป็นตัวเลขเหมือนกันทั้งหมด:
 - ไม่ต้องเก็บ type ซ้ำ  
@@ -109,7 +109,7 @@ List เก็บแบบ: pointer → object → data
 
 ---
 
-## 6️ NumPy คืออะไร
+## 6️) NumPy คืออะไร
 
 ```python
 import numpy as np
@@ -119,7 +119,7 @@ NumPy = library สำหรับจัดการ array เร็ว ๆ
 
 ---
 
-## 7️ สร้าง NumPy Array
+## 7️) สร้าง NumPy Array
 
 ```python
 np.array([1, 2, 3, 4])
@@ -127,7 +127,7 @@ np.array([1, 2, 3, 4])
 
 ---
 
-## 8️ dtype
+## 8️) dtype
 
 ```python
 np.array([1, 2, 3], dtype='float32')
@@ -137,7 +137,7 @@ np.array([1, 2, 3], dtype='float32')
 
 ---
 
-## 9️ Upcasting
+## 9️) Upcasting
 
 ```python
 np.array([3.14, 4, 2])
@@ -147,7 +147,7 @@ np.array([3.14, 4, 2])
 
 ---
 
-## 10 Multi-dimensional
+## 10) Multi-dimensional
 
 ```python
 np.array([[1,2,3],[4,5,6]])
@@ -155,7 +155,7 @@ np.array([[1,2,3],[4,5,6]])
 
 ---
 
-## 1️1️ สร้าง array แบบเร็ว
+## 1️1️) สร้าง array แบบเร็ว
 
 ```python
 np.zeros(5)
@@ -166,7 +166,7 @@ np.linspace(0,1,5)
 
 ---
 
-## 1️2️ dtype ที่ควรรู้
+## 1️2️) dtype ที่ควรรู้
 
 - int32 / int64
 - float32 / float64
@@ -192,4 +192,4 @@ np.linspace(0,1,5)
 
 EP ถัดไป:
 
-> The Basics of NumPy Arrays
+> EP2 : The Basics of NumPy Arrays
