@@ -806,6 +806,45 @@ plt.ylabel("y")
 plt.show()
 ```
 
+<br>
+
+<details>
+<summary>💡 ลองมาดู จุดที่ 0</summary>
+
+```py
+target = 0
+
+plt.figure(figsize=(6,6))
+
+# จุดทั้งหมด (สีเทา)
+plt.scatter(points[:, 0], points[:, 1], color='gray', s=50)
+
+# จุด target (สีแดง)
+plt.scatter(points[target, 0], points[target, 1],
+            color='red', s=150, label=f"Point {target}")
+
+# เพื่อนบ้าน (สีน้ำเงิน)
+for j in nearest_2[target]:
+    plt.scatter(points[j, 0], points[j, 1],
+                color='blue', s=120)
+
+    # วาดเส้นเชื่อม
+    xs = [points[target, 0], points[j, 0]]
+    ys = [points[target, 1], points[j, 1]]
+    plt.plot(xs, ys, color='black')
+
+# ใส่ label
+for i in range(points.shape[0]):
+    plt.text(points[i, 0], points[i, 1], str(i),
+             fontsize=10)
+
+plt.legend()
+plt.title(f"kNN for Point {target}")
+plt.show()
+```
+
+</details>
+
 ### หมายเหตุ
 
 ตัวอย่างนี้เป็น brute-force kNN  
