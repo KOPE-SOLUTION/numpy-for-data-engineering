@@ -770,9 +770,12 @@ print(nearest_2)
 ```python
 k = 2
 
-nearest_partition = np.argpartition(dist_sq, k + 1, axis=1)
+idx = np.argpartition(dist_sq, k + 1, axis=1)[:, :k+1]
 
-nearest_2_fast = nearest_partition[:, 1:k+1]
+nearest_2_fast = np.array([
+    row[row != i][:k]
+    for i, row in enumerate(idx)
+])
 
 print(nearest_2_fast)
 ```
